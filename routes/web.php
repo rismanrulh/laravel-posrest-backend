@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
@@ -24,5 +25,6 @@ Route::middleware(['auth'])->group(function (){
         return view('pages.dashboard');
     })->name('home');
     Route::resource('users', UserController::class);
+    Route::resource('products', ProductController::class);
 
 });
