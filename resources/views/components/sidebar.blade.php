@@ -28,5 +28,11 @@
                             href="{{ Route('products.index')}}">Products</a>
                     </li>
                 </ul>
+                <ul class="dropdown-menu">
+                    <li class=''>
+                        <a class="nav-link"
+                            href="{{ Route('categories.index')}}">Categories</a>
+                    </li>
+                </ul>
             </li>
 </div>
